@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>On Running Cloudtilt — Suisse</title>
+<style>
+  :root {
+    --encre: #10283B;
+    --surligneur: #F3D33B;
+    --papier: #F5F6F2;
+    --gris: #56636D;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background: var(--papier);
+    color: var(--encre);
+    line-height: 1.5;
+    padding-bottom: 90px;
+  }
+  h1, h2 {
+    font-family: Charter, Georgia, serif;
+  }
+  header {
+    padding: 32px 20px 24px;
+    text-align: center;
+  }
+  header .tag {
+    display: inline-block;
+    background: var(--surligneur);
+    color: var(--encre);
+    font-weight: 700;
+    font-size: 13px;
+    padding: 4px 10px;
+    border-radius: 4px;
+    margin-bottom: 14px;
+  }
+  header h1 {
+    font-size: 30px;
+    line-height: 1.15;
+    margin-bottom: 10px;
+  }
+  header p {
+    color: var(--gris);
+    font-size: 16px;
+    max-width: 480px;
+    margin: 0 auto;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    padding: 8px 20px 24px;
+    max-width: 480px;
+    margin: 0 auto;
+  }
+  @media (min-width: 640px) {
+    .grid { grid-template-columns: 1fr 1fr; max-width: 720px; }
+  }
+  .card {
+    background: white;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(16,40,59,0.08);
+    display: flex;
+    flex-direction: column;
+  }
+  .swatch {
+    height: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Charter, Georgia, serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.25);
+  }
+  .swatch.noir { background: #1a1a1a; }
+  .swatch.blanc { background: #d8d8d2; color: var(--encre); text-shadow: none; }
+  .swatch.creme { background: #e9dfc8; color: var(--encre); text-shadow: none; }
+  .swatch.bleu { background: #1e4d7b; }
+  .card-body {
+    padding: 16px 18px 18px;
+  }
+  .card-body h3 {
+    font-size: 15px;
+    color: var(--gris);
+    font-weight: 500;
+    margin-bottom: 2px;
+  }
+  .card-body .price {
+    font-family: Charter, Georgia, serif;
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 12px;
+  }
+  .btn {
+    display: block;
+    width: 100%;
+    text-align: center;
+    background: var(--encre);
+    color: white;
+    text-decoration: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 15px;
+  }
+  .btn:active { opacity: 0.85; }
+  .info {
+    max-width: 480px;
+    margin: 8px auto 0;
+    padding: 16px 20px;
+    color: var(--gris);
+    font-size: 14px;
+    text-align: center;
+  }
+  footer {
+    text-align: center;
+    color: var(--gris);
+    font-size: 12px;
+    padding: 30px 20px 10px;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <span class="tag">On Running Cloudtilt</span>
+  <h1>La Cloudtilt, livrée chez vous en Suisse</h1>
+  <p>Achetée en France, livrée en Suisse. 4 coloris disponibles, 190 CHF la paire.</p>
+</header>
+
+<div class="grid">
+
+  <div class="card">
+    <div class="swatch noir">Noir</div>
+    <div class="card-body">
+      <h3>On Running Cloudtilt</h3>
+      <div class="price">190 CHF</div>
+      <a class="btn" href="mailto:noatestutgstyr@icloud.com?subject=Commande%20Cloudtilt%20Noir&body=Bonjour%2C%20je%20souhaite%20commander%20une%20paire%20On%20Running%20Cloudtilt%20Noir%20(190%20CHF).%20Ma%20pointure%3A%20">Commander</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="swatch blanc">Blanc</div>
+    <div class="card-body">
+      <h3>On Running Cloudtilt</h3>
+      <div class="price">190 CHF</div>
+      <a class="btn" href="mailto:noatestutgstyr@icloud.com?subject=Commande%20Cloudtilt%20Blanc&body=Bonjour%2C%20je%20souhaite%20commander%20une%20paire%20On%20Running%20Cloudtilt%20Blanc%20(190%20CHF).%20Ma%20pointure%3A%20">Commander</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="swatch creme">Crème</div>
+    <div class="card-body">
+      <h3>On Running Cloudtilt</h3>
+      <div class="price">190 CHF</div>
+      <a class="btn" href="mailto:noatestutgstyr@icloud.com?subject=Commande%20Cloudtilt%20Cr%C3%A8me&body=Bonjour%2C%20je%20souhaite%20commander%20une%20paire%20On%20Running%20Cloudtilt%20Cr%C3%A8me%20(190%20CHF).%20Ma%20pointure%3A%20">Commander</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="swatch bleu">Bleu</div>
+    <div class="card-body">
+      <h3>On Running Cloudtilt</h3>
+      <div class="price">190 CHF</div>
+      <a class="btn" href="mailto:noatestutgstyr@icloud.com?subject=Commande%20Cloudtilt%20Bleu&body=Bonjour%2C%20je%20souhaite%20commander%20une%20paire%20On%20Running%20Cloudtilt%20Bleu%20(190%20CHF).%20Ma%20pointure%3A%20">Commander</a>
+    </div>
+  </div>
+
+</div>
+
+<p class="info">Paiement par Twint ou virement à la remise en main propre ou à l'envoi. Livraison sous quelques jours en Suisse.</p>
+
+<footer>
+  Éditeur : Noa Testut-Gstyr, Chemin Vy des Mores 14a, 1291 Commugny, Suisse. Contact : noatestutgstyr@icloud.com.
+</footer>
+
+</body>
+</html>
