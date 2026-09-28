@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr-CH">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fuites — Repérez les abonnements et frais bancaires payés pour rien</title>
+<meta name="description" content="Importez votre relevé : Fuites liste les doublons, essais jamais résiliés, hausses de prix silencieuses et frais anormaux, avec le montant à récupérer.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_CH">
+<meta property="og:title" content="Fuites — Repérez les abonnements et frais bancaires payés pour rien">
+<meta property="og:description" content="Doublons, essais oubliés, hausses silencieuses, frais anormaux : chiffrés en francs, à partir de votre relevé.">
+<meta name="theme-color" content="#10283B">
+<style>
+:root{--encre:#10283B;--surligneur:#F3D33B;--papier:#F5F6F2;--gris:#56636D;--trait:#D5DAD2}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--papier);color:var(--encre);font:17px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;padding-bottom:88px}
+main,footer{max-width:640px;margin:0 auto;padding:0 20px}
+h1,h2{font-family:Charter,"Iowan Old Style",Georgia,serif;font-weight:800;line-height:1.12;letter-spacing:-.01em;margin:0}
+h1{font-size:clamp(2rem,8.5vw,2.9rem);padding-top:28px}
+h2{font-size:1.5rem;margin-bottom:12px}
+p{margin:0 0 12px}
+.marque{font-family:Charter,Georgia,serif;font-weight:800;font-size:1.25rem;padding-top:20px}
+.sous{color:var(--gris);margin-top:14px}
+.releve{margin:24px 0;border:1px solid var(--trait);background:#fff;font-variant-numeric:tabular-nums}
+.releve p{display:flex;justify-content:space-between;gap:12px;margin:0;padding:11px 14px;border-bottom:1px solid var(--trait);font-size:.95rem}
+.releve p:last-of-type{border-bottom:0}
+.releve .fuite{background:var(--surligneur);font-weight:700}
+.releve small{display:block;padding:8px 14px;color:var(--gris);border-top:1px solid var(--trait);font-size:.8rem}
+.btn{display:block;text-align:center;background:var(--encre);color:#fff;text-decoration:none;font-weight:700;font-size:1.05rem;padding:16px 20px;min-height:52px;border-radius:4px}
+.btn:focus-visible{outline:3px solid var(--surligneur);outline-offset:3px}
+section{padding:36px 0 4px;border-top:1px solid var(--trait);margin-top:36px}
+.chiffre{font-family:Charter,Georgia,serif;font-size:1.25rem;font-weight:700;line-height:1.35}
+dl{margin:0}dt{font-weight:700;margin-top:18px}dd{margin:2px 0 0;color:var(--gris)}
+ul{padding-left:20px;margin:0 0 16px}li{margin-bottom:6px}
+.prix{font-family:Charter,Georgia,serif;font-size:2.4rem;font-weight:800}
+.prix span{font-size:1rem;font-weight:400;font-family:system-ui,sans-serif;color:var(--gris)}
+.garantie{background:#fff;border-left:5px solid var(--surligneur);padding:14px 16px;margin:16px 0 20px}
+footer{padding-top:32px;padding-bottom:32px;color:var(--gris);font-size:.85rem;border-top:1px solid var(--trait);margin-top:36px}
+.barre{position:fixed;left:0;right:0;bottom:0;padding:12px 16px calc(12px + env(safe-area-inset-bottom));background:var(--papier);border-top:1px solid var(--trait)}
+@media(min-width:720px){.barre{display:none}body{padding-bottom:0}}
+</style>
+</head>
+<body>
+<main>
+  <div class="marque">Fuites</div>
+
+  <h1>Repérez les abonnements et frais bancaires que vous payez pour rien.</h1>
+  <p class="sous">Importez votre relevé. Fuites liste les doublons, les essais jamais résiliés, les hausses de prix silencieuses et les frais anormaux, avec le montant à récupérer.</p>
+
+  <div class="releve" aria-label="Exemple de relevé avec une fuite repérée">
+    <p><span>Outil de facturation</span><span>−24,00</span></p>
+    <p><span>Stockage en ligne</span><span>−9,90</span></p>
+    <p class="fuite"><span>Essai jamais résilié</span><span>−15,00</span></p>
+    <small>Exemple. Montants en CHF.</small>
+  </div>
+
+  <a class="btn" href="https://buy.stripe.com/test_28E5kD5DOdHY36Hd2Q7kc00">Précommander : 29 CHF par mois</a>
+
+  <section>
+    <h2>Ce que ça coûte de ne pas regarder</h2>
+    <p class="chiffre">Un abonnement oublié à 15 CHF par mois, c’est 180 CHF par an. Trois, c’est 540 CHF.</p>
+    <p>Votre comptable examine le bilan annuel, pas chaque prélèvement du mois. Et personne n’a le temps de relire un relevé ligne par ligne.</p>
+  </section>
+
+  <section>
+    <h2>Ce que Fuites repère</h2>
+    <dl>
+      <dt>Doublons et essais oubliés</dt>
+      <dd>Deux outils qui font la même chose, un essai gratuit devenu payant : chaque ligne est listée avec son coût sur l’année.</dd>
+      <dt>Hausses de prix silencieuses</dt>
+      <dd>Un abonnement passé de 12 à 15 CHF sans annonce s’affiche avec l’ancien et le nouveau montant.</dd>
+      <dt>Frais bancaires anormaux</dt>
+      <dd>Agios, commissions, rejets : signalés dès qu’ils sortent de l’ordinaire.</dd>
+    </dl>
+    <p style="margin-top:18px">Chaque mois, vous recevez un rapport qui chiffre les fuites et l’économie possible.</p>
+  </section>
+
+  <section id="offre">
+    <h2>Précommande</h2>
+    <p class="prix">29 CHF <span>par mois</span></p>
+    <ul>
+      <li>Import de vos relevés (fichier CSV exporté depuis votre banque)</li>
+      <li>Rapport mensuel des fuites, alertes à chaque relevé importé</li>
+      <li>Résiliable à tout moment</li>
+    </ul>
+    <div class="garantie">
+      <strong>Fuites est en cours de finalisation.</strong> Votre paiement réserve votre accès. Vous recevez un e-mail dès l’ouverture, au plus tard le 30 octobre 2026. Sinon, remboursement intégral sur simple demande.
+    </div>
+    <a class="btn" href="https://buy.stripe.com/test_28E5kD5DOdHY36Hd2Q7kc00">Précommander : 29 CHF par mois</a>
+  </section>
+</main>
+
+<footer id="mentions">
+  <p><strong>Informations légales</strong><br>
+  Éditeur : [PRÉNOM NOM], [ADRESSE], Suisse. Contact : [EMAIL].<br>
+  Paiement traité par Stripe : Fuites ne voit ni ne conserve votre numéro de carte.<br>
+  Les conditions générales et la politique de confidentialité complètes seront publiées avant l’ouverture du service.</p>
+</footer>
+
+<div class="barre"><a class="btn" href="https://buy.stripe.com/test_28E5kD5DOdHY36Hd2Q7kc00">Précommander : 29 CHF par mois</a></div>
+</body>
+</html>
